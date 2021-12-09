@@ -535,8 +535,6 @@ p {
   grid-template-columns: repeat(12, 70px);
   grid-template-rows: repeat(3, 210px);
   grid-gap: 36px 30px;
-  width: 1194px;
-  overflow-y: scroll;
 }
 
 .gallery__list::-webkit-scrollbar {
