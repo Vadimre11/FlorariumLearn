@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
     <title>Florarium</title>
 </head>
 <body>
@@ -55,6 +56,24 @@
                             </div>
                         </div>
                         <button type="button" class="basket__triangle"></button>
+                    </div>
+                    <div class="menu__burger">
+                        <span class="menu__line"></span>
+                    </div>
+                    <div class="menu__burger-window">
+                        <nav class="nav nav__burger">
+                            <ul class="nav__list nav__list-burger">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link nav__link-burger">Главная</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link nav__link-burger">Каталог</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link nav__link-burger">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -130,13 +149,21 @@
                         </div>
                     </div>
                     <div class="product__choice">
-                        <div class="slider">
-                            <a href="#" class="product__button-slider product__button-sliderleft">
-                                <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="28.5" cy="28.5" r="28.5" fill="#ECECEC"/>
-                                    <path d="M32.9706 15.9706L19.9706 28.9706L32.9706 41.9706" stroke="white" stroke-width="3"/>
-                                    </svg>                                
-                            </a>
+                        <div class="product__slider">
+                            <div class="slider__control">
+                                <a href="#" class="product__button-slider product__button-sliderleft">
+                                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="28.5" cy="28.5" r="28.5" fill="#ECECEC"/>
+                                        <path d="M32.9706 15.9706L19.9706 28.9706L32.9706 41.9706" stroke="white" stroke-width="3"/>
+                                        </svg>                                
+                                </a>
+                                <a href="#" class="product__button-slider product__button-sliderright">
+                                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle r="28.5" transform="matrix(-1 0 0 1 28.5 28.5)" fill="#ECECEC"/>
+                                        <path d="M24.0296 15.9706L37.0295 28.9706L24.0296 41.9706" stroke="white" stroke-width="3"/>
+                                        </svg>                                
+                                </a>
+                            </div>
                             <ul class="product__choice-list">
                                 <li class="product__item">
                                     <div class="product__item-pic">
@@ -190,83 +217,167 @@
                                     </div>
                                 </li>
                             </ul>
-                            <a href="#" class="product__button-slider product__button-sliderright">
-                                <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="28.5" transform="matrix(-1 0 0 1 28.5 28.5)" fill="#ECECEC"/>
-                                    <path d="M24.0296 15.9706L37.0295 28.9706L24.0296 41.9706" stroke="white" stroke-width="3"/>
-                                    </svg>                                
-                            </a>
                         </div>
                     </div>
                 </div>
             </section> 
-
-            <!-- галлерея гриды -->
-
+            <section class="gallery">
+                <div class="container">
+                    <div class="gallery__block">
+                        <h2 class="gallery__title">
+                            Фото галерея
+                        </h2>
+                        <div class="gallery__list">
+                            <div class="gallery__item gallery__item-1">
+                                <a href="#" class="gallery__link">
+                                    <div class="gallery__photo">
+                                        <img src="img/photo_gallery/uyut.jpg" alt="Набор ”уют +”" class="gallery__img">
+                                        <div class="gallery__name">
+                                             Набор ”уют +”
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery__item gallery__item-2">
+                                <a href="#" class="gallery__link">
+                                    <div class="gallery__photo">
+                                        <img src="img/photo_gallery/Present.jpg" alt="Подарочный набор" class="gallery__img">
+                                        <div class="gallery__name">
+                                             Подарочные наборы
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery__item gallery__item-3">
+                                   <a href="#" class="gallery__link">
+                                        <div class="gallery__photo">
+                                            <img src="img/photo_gallery/Succulents.jpg" alt="Суккуленты для офиса" class="gallery__img">
+                                            <div class="gallery__name">
+                                                 Суккуленты для офиса
+                                            </div>
+                                        </div>
+                                   </a>
+                            </div>
+                            <div class="gallery__item gallery__item-4">
+                                <a href="#" class="gallery__link">
+                                    <div class="gallery__photo">
+                                        <img src="img/photo_gallery/Florarium.jpg" alt="Флорариум для него" class="gallery__img">
+                                        <div class="gallery__name">
+                                            Флорариум для него
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery__item gallery__item-5">
+                                <a href="#" class="gallery__link">
+                                    <div class="gallery__photo">
+                                        <img src="img/photo_gallery/Best.jpg" alt="Лучший набор 2020" class="gallery__img">
+                                        <div class="gallery__name">
+                                            Лучший набор 2020
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery__item gallery__item-6">
+                                <a href="#" class="gallery__link">
+                                    <div class="gallery__photo">
+                                        <img src="img/photo_gallery/Floriana_for_her.jpg" alt="Флорариум для нее" class="gallery__img">
+                                        <div class="gallery__name">
+                                            Флорариум для нее
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery__item gallery__item-7">
+                                <a href="#" class="gallery__link">
+                                    <div class="gallery__photo">
+                                        <img src="img/photo_gallery/Budget.jpg" alt="Боджетный набор" class="gallery__img">
+                                        <div class="gallery__name">
+                                            Боджетный набор
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery__item gallery__item-8">
+                                <a href="#" class="gallery__link">
+                                    <div class="gallery__photo">
+                                        <img src="img/photo_gallery/interier.jpg" alt="Наборы для интерьера" class="gallery__img">
+                                        <div class="gallery__name">
+                                            Наборы для интерьера
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </section>      
             <section class="reviews">
                 <div class="container">
                     <h2 class="reviews__title">
                         О нас говорят
                     </h2>
-                    <ul class="reviews__list">
-                        <li class="reviews__item">
-                            <div class="reviews__item-title">
-                                <span class="reviews__item-name">
-                                    Иван
-                                </span>
-                                <span class="reviews__item-job">
-                                    директор "Office"
-                                </span>
-                            </div>
-                            <div class="reviews__item-text">
-                                Обратился в компанию “Floris master” для 
-                                озеленения нашего офиса, теперь на 
-                                рабочем месте царит гармония и уют.
-                            </div>
-                            <div class="reviews__item-photo">
-                                <img src="img/rev__photo/ivan.png" alt="Иван" class="reviews__img">
-                            </div>
-                        </li>
-                        <li class="reviews__item">
-                            <div class="reviews__item-title">
-                                <span class="reviews__item-name">
-                                    Екатерина
-                                </span>
-                                <span class="reviews__item-job">
-                                    фрилансер
-                                </span>
-                            </div>
-                            <div class="reviews__item-text">
-                                Решила добавить эстетики в интерьер 
-                                свого дома, ребята из “Florist master” 
-                                справились с этим как никто другой.
-                            </div>
-                            <div class="reviews__item-photo">
-                                <img src="img/rev__photo/kate.png" alt="Екатерина" class="reviews__img">
-                            </div>
-                        </li>
-                        <li class="reviews__item">
-                            <div class="reviews__item-title">
-                                <span class="reviews__item-name">
-                                    Владимир
-                                </span>
-                                <span class="reviews__item-job">
-                                    безработный
-                                </span>
-                            </div>
-                            <div class="reviews__item-text">
-                                Люблю цветочки и все что с ними связано.
-                            </div>
-                            <div class="reviews__item-photo">
-                                <img src="img/rev__photo/vladimir.png" alt="Владимир" class="reviews__img">
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="reviews__content">
+                            <ul class="reviews__list">
+                                <li class="reviews__item">
+                                    <div class="reviews__item-title">
+                                        <span class="reviews__item-name">
+                                            Иван
+                                        </span>
+                                        <span class="reviews__item-job">
+                                            директор "Office"
+                                        </span>
+                                    </div>
+                                    <div class="reviews__item-text">
+                                        Обратился в компанию “Floris master” для 
+                                        озеленения нашего офиса, теперь на 
+                                        рабочем месте царит гармония и уют.
+                                    </div>
+                                    <div class="reviews__item-photo">
+                                        <img src="img/rev__photo/ivan.png" alt="Иван" class="reviews__img">
+                                    </div>
+                                </li>
+                                <li class="reviews__item">
+                                    <div class="reviews__item-title">
+                                        <span class="reviews__item-name">
+                                            Екатерина
+                                        </span>
+                                        <span class="reviews__item-job">
+                                            фрилансер
+                                        </span>
+                                    </div>
+                                    <div class="reviews__item-text">
+                                        Решила добавить эстетики в интерьер 
+                                        свого дома, ребята из “Florist master” 
+                                        справились с этим как никто другой.
+                                    </div>
+                                    <div class="reviews__item-photo">
+                                        <img src="img/rev__photo/kate.png" alt="Екатерина" class="reviews__img">
+                                    </div>
+                                </li>
+                                <li class="reviews__item">
+                                    <div class="reviews__item-title">
+                                        <span class="reviews__item-name">
+                                            Владимир
+                                        </span>
+                                        <span class="reviews__item-job">
+                                            безработный
+                                        </span>
+                                    </div>
+                                    <div class="reviews__item-text">
+                                        Люблю цветочки и все что с ними связано.
+                                    </div>
+                                    <div class="reviews__item-photo">
+                                        <img src="img/rev__photo/vladimir.png" alt="Владимир" class="reviews__img">
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <div class="container">
+            <div class="container footer__container">
                 <div class="footer__content">
                     <div class="logo">
                         <a href="#" class="logo__link">
@@ -279,7 +390,7 @@
                              </div>
                         </a>
                     </div>
-                    <nav class="nav header__nav">
+                    <nav class="nav footer__nav">
                         <ul class="nav__list">
                             <li class="nav__item">
                                 <a href="#" class="nav__link">Главная</a>
@@ -292,17 +403,17 @@
                             </li>
                         </ul>
                     </nav>
-                    <address class="contact">
+                    <address class="contact footer__contact">
                         <a href="tel:+76543210000" class="contact__tel">+7 654 321 00 00</a>
                     </address>
-                    <a href="#" class="footer__link-up">
-                        <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle r="28.5" transform="matrix(1.39071e-07 1 1 -1.39071e-07 28.5 28.5)" fill="#ECECEC" fill-opacity="0.48"/>
-                            <path d="M15.9707 32.9704L28.9707 19.9705L41.9707 32.9704" stroke="white" stroke-opacity="0.7" stroke-width="3"/>
-                            </svg>
-                            
-                    </a>
             </div>
+            <a href="#" class="footer__link-up">
+                <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle r="28.5" transform="matrix(1.39071e-07 1 1 -1.39071e-07 28.5 28.5)" fill="#ECECEC" fill-opacity="0.48"/>
+                    <path d="M15.9707 32.9704L28.9707 19.9705L41.9707 32.9704" stroke="white" stroke-opacity="0.7" stroke-width="3"/>
+                    </svg>
+                    
+            </a>
         </footer>
     </div>
 </body>
